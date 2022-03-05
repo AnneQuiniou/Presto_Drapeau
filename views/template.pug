@@ -1,0 +1,20 @@
+doctype html
+html(lang="fr")
+    head
+        include includes/head.pug
+    body 
+        div#container
+            header
+                include includes/header.pug
+            if(!token)
+                content#login
+                    include includes/login.pug
+            else
+                content
+            footer
+                include includes/footer.pug
+        if(token)
+            script(src="/socket.io/socket.io.min.js")
+            script(src="/js/socket.js")
+        else
+            script(src="/js/script.js") 

@@ -1,0 +1,30 @@
+// version page login
+
+.login {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+
+  background-color: $box_bg;
+  border: 1px solid $box_border;
+
+  text-align: center;
+
+  .warning {
+    font-style: italic;
+    color: $accent_bright;
+  }
+
+  img {
+    width: 400px;
+  }
+}
+
+p#top {
+  color: $accent_light;
+
+  a {
+    text-decoration: none;
+    color: $accent;
+  }
+}

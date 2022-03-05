@@ -1,0 +1,23 @@
+#top
+    h2 Classement des joueurs
+    div
+        img(src='/img/girafocop.png')
+        h2 #1 - #{players[0].pseudo}
+        p Gagnant actuel du Trophée Girafocop
+    h3 Top 10 des joueurs
+    ol
+        for player of players
+            - time = Math.ceil(player.time/6000);
+            if(time < 2)
+                if (player.wins < 2)
+                    li #{player.pseudo} - #{player.wins} partie gagnée - #{time} minute de jeu
+                else
+                    li #{player.pseudo} - #{player.wins} parties gagnées - #{time} minute de jeu
+            else
+                if (player.wins < 2)
+                    li #{player.pseudo} - #{player.wins} partie gagnée - #{time} minutes de jeu
+                else
+                    li #{player.pseudo} - #{player.wins} parties gagnées - #{time} minutes de jeu
+    
+    p Retourner à la 
+        a(href="/") page de login du jeu

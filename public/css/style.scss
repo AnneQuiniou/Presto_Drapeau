@@ -1,0 +1,30 @@
+@import "sass/_variables.scss";
+@import "sass/header.scss";
+@import "sass/footer.scss";
+@import "sass/content.scss";
+@import "sass/login.scss";
+@import "sass/top.scss";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+
+  //-------------------------------------Gestion des polices
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+
+  //------------------------------------Gestion du fond
+
+  background-color: #85d6bc;
+}
+
+div#container {
+  //------------------------------------Gestion affichage de la div principale
+
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,260 @@
+header {
+  margin: 10px 0px;
+  min-width: 600px;
+  width: 80%;
+  flex-shrink: 0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid black;
+}
+header img {
+  border: 1px solid black;
+}
+header div {
+  width: "(calc(100 / 3))%";
+  text-align: center;
+}
+header div h1 {
+  font-size: 3rem;
+  color: black;
+  margin: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+header div p {
+  color: #2ec492;
+  font-style: italic;
+  margin: 0px;
+}
+
+footer {
+  margin: 10px 0px;
+  min-width: 600px;
+  width: 80%;
+  flex-shrink: 0;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid black;
+}
+footer p {
+  color: black;
+  font-size: 0.8rem;
+}
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  color: #2ec492;
+}
+
+content#login {
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 600px;
+  width: 80%;
+  margin: 0px 0px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  display: flex;
+}
+content#login input {
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+content#login input[type=submit] {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+content#login input[type=submit] :hover {
+  background-color: #5afca6;
+}
+
+content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 600px;
+  width: 80%;
+  margin: 0px 0px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+content input {
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+content input[type=submit] {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+content input[type=submit] :hover {
+  background-color: #5afca6;
+}
+
+div#game {
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+  grid-column: 1;
+  grid-row: 1/span 2;
+  text-align: center;
+}
+div#game p#timer {
+  font-size: 3rem;
+}
+div#game img {
+  height: 150px;
+  border: 1px solid black;
+}
+div#game p#wrongAnswer {
+  color: #ff7b3d;
+}
+div#game p#goodAnswer {
+  color: #2ec492;
+  font-size: 2rem;
+}
+
+div.player {
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+}
+div.player p {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+div.player div.avatar {
+  width: 39px;
+  height: 36px;
+  position: relative;
+  margin: 10px auto;
+}
+div.player div.avatar img {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+}
+div.player #setsandscores {
+  font-size: 0.9rem;
+}
+div.player .winIndicator {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  animation: 3s linear slidein;
+}
+
+div#player0 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+div#player1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+div#endgame {
+  padding: 40px;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: calc(50% - 150px);
+  margin: auto;
+  width: 300px;
+}
+div#endgame div.avatar {
+  width: 39px;
+  height: 36px;
+  position: relative;
+  margin: 10px auto;
+}
+div#endgame div.avatar img {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+}
+div#endgame button {
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.login {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+}
+.login .warning {
+  font-style: italic;
+  color: #ff7b3d;
+}
+.login img {
+  width: 400px;
+}
+
+p#top {
+  color: #5afca6;
+}
+p#top a {
+  text-decoration: none;
+  color: #2ec492;
+}
+
+div#top {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  overflow-y: auto;
+}
+div#top ol {
+  text-align: left;
+  padding-left: 200px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  background-color: #85d6bc;
+}
+
+div#container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

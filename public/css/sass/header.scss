@@ -1,0 +1,38 @@
+header {
+  margin: 10px 0px;
+  min-width: 600px;
+  width: 80%;
+  flex-shrink: 0;
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+
+  background-color: $box_bg;
+  border: 1px solid $box_border;
+
+  img {
+    border: 1px solid black;
+  }
+
+  // ------------------------- Gestion des textes et polices
+  div {
+    width: "(calc(100 / 3))%";
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+      color: $title;
+      margin: 0px;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    p {
+      color: $accent;
+      font-style: italic;
+      margin: 0px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+div#top {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+
+  background-color: $box_bg;
+  border: 1px solid $box_border;
+
+  text-align: center;
+
+  overflow-y: auto;
+
+  ol {
+    text-align: left;
+    padding-left: 200px;
+  }
+}

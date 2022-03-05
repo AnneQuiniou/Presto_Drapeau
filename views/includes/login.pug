@@ -1,0 +1,24 @@
+div.login
+    p#top
+        a(href='/top') //// Voir le classement des joueurs ////
+    if(joueurs >= 2)
+        p Le nombre maximum de joueur est atteint.
+        p Vous pouvez regarder ces petits chiens en attendant.
+        img(src='/img/wait.jpg')
+    else        
+        p Choisissez un nom et une couleur (claire) pour jouer.
+            form#submitEntry(method='POST')
+                p
+                    label Pseudo 
+                    br
+                    input#pseudo(type='text' name="pseudo" maxlength="16")
+                p
+                    label Couleur
+                    br
+                    input#color(type='color' value="#d9ffeb" name="color")
+                p
+                    input#submitForm(type='submit' value='Je veux jouer !')
+                if(warning)
+                    p.warning=warning
+
+        
