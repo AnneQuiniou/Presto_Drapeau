@@ -25,7 +25,7 @@ Si vous voulez jouer en local, clonez le dépôt git:
 git clone https://github.com/AnneQuiniou/Presto_Drapeau.git
 ```
 
-Une fois le dépôt cloné, installez les dépendances:
+Une fois le dépôt cloné, rendez-vous dans le dossier et installez les dépendances:
 
 ```
 npm i
@@ -33,7 +33,7 @@ npm i
 
 **Adaptations**
 
-Changez la politique de cookies (la politique actuelle est faite pour Heroku et permet de jouer sur un HTTPS):
+Dans le fichier server.js, ligne 104, changez la politique de cookies (la politique actuelle est faite pour Heroku et permet de jouer sur un HTTPS):
 
 - SameSite: true,
 - secure: false,
