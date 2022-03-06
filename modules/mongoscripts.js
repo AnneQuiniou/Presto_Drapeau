@@ -19,7 +19,7 @@ export function mongoCreatePlayer(player) {
         if (err) {
           console.log(err);
         } else {
-          console.log(result + " was inserted into Mongo DB");
+          console.log("Player was inserted into Mongo DB");
         }
       });
     }

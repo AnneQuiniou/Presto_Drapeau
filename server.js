@@ -294,14 +294,6 @@ ioServer.on("connection", (socket) => {
     }
   });
 
-  socket.on("playerWriting", (info) => {
-    for (let player in allPlayers) {
-      if (socket.id != player) {
-        ioServer.to(player).emit("otherPlayerWriting", info);
-      }
-    }
-  });
-
   socket.on('touslesscoresazero', () => {
     for (let player in allPlayers) {
       allPlayers[player].sets = 0;

@@ -31,11 +31,6 @@ window.addEventListener("DOMContentLoaded", () => {
     pTimer.innerText = timer;
   });
 
-  socket.on("otherPlayerWriting", (message) => {
-    const entryFieldsPlayer2 = document.getElementsByTagName("input")[2];
-    entryFieldsPlayer2.value = message;
-  });
-
   socket.on("youWonSet", (info) => {
     updateMySets(info);
     showWinsAndLosses('won', '+1', info.answer);
@@ -123,10 +118,6 @@ window.addEventListener("DOMContentLoaded", () => {
           inputSubmit.type = "submit";
           inputSubmit.value = 'C\'est ça !';
           inputSubmit.disabled = true;
-
-          inputSubmit.addEventListener("input", () => {
-            socket.emit("playerWriting", inputText.value);
-          });
 
           inputSubmit.addEventListener("click", (e) => {
             e.preventDefault();
